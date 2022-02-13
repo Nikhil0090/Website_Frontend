@@ -1,0 +1,36 @@
+/* @media(min-width:769px) and (max-width:1024px){ */
+
+    .btn{
+    font-size: 1rem;
+    /* margin-bottom: 34px; */
+    }
+    #home{
+        height: 316px;
+    }
+    #home::before{
+        height: 83%;
+    }
+    
+    .h-primary {
+        font-size: 3rem;
+        padding: 10px;
+    }
+
+    #home {
+       height: 316px;
+    }
+/* 
+    #services {
+        flex-direction: column;
+    
+    } */
+
+    #services .box{
+        margin: 18px;
+    }
+
+    .services-container h1{
+        padding-top: 65px; 
+    }
+
+    /* } */

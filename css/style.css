@@ -1,0 +1,234 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* CSS Veriables */
+
+:root {
+    --navbar-height: 59px;
+}
+/* Navigation Bar  */
+#navbar {
+    display:flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+} 
+ /* Navigation Bar :" /* logo and image */
+ #logo{
+    margin: 0px 0px;
+ }
+
+ #logo img{
+    margin: -10px 7px;
+    /* height: 34px 20px; */
+ }
+
+ /* Navigation Bar :" /* list Styling */
+
+    #navbar::before{
+        content: "";
+        background-color:black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index:-1;
+        opacity: 0.5;
+    }
+    #navbar ul {
+        display:flex;
+        margin: 0px;
+        padding: 0px;
+    }
+        #navbar ul li {
+            list-style: none;
+            font-size:1.3rem;
+        }
+        #navbar ul li a {
+        font-family: 'Dancing Script', cursive;
+        display:block;
+        padding: 0px 37px;
+        border-radius: 35px;
+        text-decoration: none;
+        color:white;
+ }
+ #navbar ul li a:hover{
+        color:black;
+        background-color:white;
+ }
+
+ /* Home Section */
+ #home{
+     display:flex;
+     flex-direction: column;
+     padding: 3px 140px;
+     height:390px;
+     justify-content: center;
+     align-items: center;
+ }
+ #home::before{
+    content: "";
+    background:url(../img/pexels-lisa-fotios-1279330.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    opacity: 0.8;
+ }
+ #home h1{
+    
+    font-weight:bold;
+     color:black;
+     text-align: center;
+     /* text-shadow: 3px 0px rgb(83, 83, 83); */
+ }
+ #home p{
+    font-family: 'Dancing Script', cursive;
+     color:rgb(0, 0, 0);
+     text-align: center;
+     font-size: 2rem;
+     font-weight: bold;
+ }
+
+/* Services Section  */
+
+    .services-container h1{
+        text-shadow: 3px 0px rgb(83, 83, 83);
+    }
+
+    #services{
+        margin: 34px;
+        display:flex;
+    }
+    #services .box{
+        border:2px solid sandybrown; 
+        padding: 2px;
+        margin: 0px 25px;
+        border-radius:23px;
+        background-color: rgb(243, 243, 243);
+        box-shadow: 6px 6px 6px sandybrown;
+        font-family:cursive;
+       
+    }
+    #services .box img{ 
+       height:200px;
+       margin: auto;
+       display: block;
+       border-radius: 50px;
+    }
+
+/* Clients Section */
+#client-section{
+    position: relative;
+    height: 293px;
+}
+#client-section h1{
+    text-shadow: 3px 0px rgb(83, 83, 83);
+}
+#client-section::before{
+    height: 100%;
+    width: 100%;
+    content:"";
+    position: absolute;
+    background: url(../bg3.jpg) no-repeat center center/cover;
+    /* border-radius:34px; */
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:-15px;
+    padding:6px;
+}
+#clients img{
+    height: 90px;
+    padding:10px;
+}
+/* .client-item{
+    padding:20px;
+} */
+
+/* contact section  */
+#contact{
+    position: relative;
+}
+#contact h1{
+    text-shadow: 3px 0px rgb(83, 83, 83);
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:url(../contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+   font-size:1.3rem;
+   font-family:cursive;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 8px 20px;
+}
+
+
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Dancing Script', cursive;
+     font-size:4rem;
+     padding: 10px;
+ }
+ .h1-primary{
+    font-family: 'Dancing Script', cursive;
+     /* display:block; */
+     font-size:3.5rem;
+     padding-top: 35px;
+ }
+ .h-secondary{
+     font-size:1.5rem;
+     padding: 10px;
+     text-align: center;
+ }
+ .btn{
+    padding:5px 20px;
+    border:2px solid grey;
+    background-color: grey;
+    color:white;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-size:1.3rem;
+    font-family:cursive;
+    cursor:pointer; 
+ }
+ .center{
+     text-align: center;
+ }

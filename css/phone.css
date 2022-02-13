@@ -1,0 +1,50 @@
+/* navigationBar */
+#navbar{
+    flex-direction: column;
+}
+
+
+/* Home Section */
+.h1-primary{
+    padding-top: 20px;
+}
+.h-primary{
+    padding-top: 20px;
+    font-size: 2.8rem;
+}
+
+#home{
+    height: 316px;
+}
+#home h1{
+  /* width:563px; */
+  text-align: center;
+}
+#home p{
+   /* width:660px; */
+   font-size:23px;
+}
+#home::before{
+    height: 80%;
+    /* font-size: 1.5rem; */
+}
+.btn{
+    padding: 3px 20px;
+    font-size: 0.8rem;
+}
+
+/* Services section */
+#services {
+    flex-direction: column;
+
+}
+#services .box{
+    margin: 18px;
+}
+
+/* Clients section */
+#clients{
+    flex-wrap:wrap;
+    
+}
+
